@@ -1,0 +1,109 @@
+/*------------- sub-section-2 --------------------------*/
+#contact > .sub-section-2 {
+    border: solid white 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact > .sub-section-2 > .col-1 {
+    padding: 30px;
+    width: 500px;
+    
+}
+
+#contact > .sub-section-2 > .col-1 > h3{
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+#contact > .sub-section-2 > .col-2 {
+    width: 500px;
+
+    border-left: solid rgb(172, 170, 170) 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section > .sub-section-2 > .col-2 > .icon-box-2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 10px;
+    
+}
+
+.main-section > .sub-section-2 > .col-2 > .icon-box-2 > .left-icon{
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    color: var(--first_color);
+    font-size : 20px;
+    /*align the content's position within its cell vertically*/
+    align-self: center;
+    /*align the content's position within its cell horizontally*/
+    justify-self: end;
+}
+
+.main-section > .sub-section-2 > .col-2 > .icon-box-2 > .name{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-transform: capitalize;
+    color: black;
+    
+}
+
+.main-section> .sub-section-2 > .col-2 > .icon-box-2 > .value{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: grey;
+    
+}
+
+.submit-button{
+    /* General */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    width: 200px;
+    /* Advanced */
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 10px;
+    background-color: var(--first_color);
+    float: right;
+    transition-duration: 1s;
+}
+
+.submit-button:hover{
+    background-color: var(--second_color);
+
+}
+
+/*---------------- sub-section-3 ---------------------------*/
+#contact > .sub-section-3 {
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+

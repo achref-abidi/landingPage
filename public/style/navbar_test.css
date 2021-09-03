@@ -1,0 +1,109 @@
+
+/* ------------------------------------- Nav Bar --------------------------------*/
+
+#nav-bar{
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    max-height: 70px;
+    box-shadow:  5px 1px 5px black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*
+    display : grid;
+    grid-template-columns:  repeat(auti-fit, min-max(10%, 10%));
+    */
+    
+}
+
+#nav-bar > .col-2{
+    display: flex;
+}
+
+#nav-bar > .col-2 > *{
+    margin-left: 10px;
+}
+
+.logo{
+    
+    height: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding : 10px;
+    background-color: turquoise;
+    /* Typo */
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+
+    transition-duration: 0.8s;
+    border-bottom: solid transparent 5px;
+    float: right;
+}
+.nav-link:hover{
+    border-bottom: solid var(--second_color) 5px;
+    border-radius: 5%;
+}
+
+#nav-bar > .col-1{
+    /*
+    grid-column: 1/2;*/
+    background-color: tomato;
+}
+
+#nav-bar > .col-2{
+    /*
+    grid-column: 2/3;*/
+    background-color: violet;
+}
+
+
+
+
+
+
+
+#nav-bar > .row-1{
+    grid-column: 1/2;
+    background-color: tomato;
+}
+
+
+#nav-bar > .row-2{
+    grid-column: 2/3;
+}
+
+
+#nav-bar > .row-3{
+    grid-column: 3/4;
+    background-color: tomato;
+}
+
+
+#nav-bar > .row-4{
+    grid-column: 4/5;
+
+}
+
+
+#nav-bar > .row-5{
+    grid-column: 5/6;
+}
+
+
+#nav-bar > .row-6{
+    grid-column: 6/7;
+}
+
+
+#nav-bar > .row-7{
+    grid-column: 7/8;
+}

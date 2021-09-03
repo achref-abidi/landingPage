@@ -1,0 +1,50 @@
+#nav-bar{
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    max-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#nav-bar > .col-2{
+    display: flex;
+}
+
+#nav-bar > .col-2 > *{
+    margin-left: 10px;
+}
+
+#nav-bar > .col-2 > .dropbtn  {
+    color: white;display: none;
+   
+}
+
+.logo{
+    height: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding : 10px;
+    color: white;
+    /* Typo */
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+
+    transition-duration: 0.8s;
+    border-bottom: solid transparent 5px;
+    float: right;
+}
+.nav-link:hover{
+    border-bottom: solid var(--first_color) 5px;
+    border-radius: 5%;
+}
+

@@ -1,0 +1,58 @@
+#download-banner{
+    background-color: grey;
+    background-image: url('./img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding-bottom: 50px;
+    
+}
+
+#download-banner h2{
+    color: white;
+}
+#download-banner p{
+    color: white;
+}
+#clients  p , #clients h2{
+    color: white;
+}
+
+#download-banner > .sub-section-2{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display : grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-column-gap: 10px;
+}
+
+#download-banner > .sub-section-2 > .col-2{
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    /*align flex items along the main axis*/
+    justify-content: center;
+    /*align flex items along the cross axis*/
+    align-items: center;
+}
+
+#download-banner > .sub-section-2 > .col-2 > .icon-button{
+    text-align: center;
+    font-size : 20px;
+    text-transform: lowercase;
+    letter-spacing: 1.0px;
+    line-height: 18px;  
+    transition-duration: 1s;
+}
+
+#download-banner > .sub-section-2 > .col-2 > .icon-button > i{
+    color: white;   
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#download-banner > .sub-section-2 > .col-2 > .icon-button:hover{
+    background-color: var(--first_color);
+    border-color: var(--first_color);
+}
