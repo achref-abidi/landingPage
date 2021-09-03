@@ -1,7 +1,7 @@
 
 #clients{
     background-color: grey;
-    background-image: radial-gradient(var(--first_color), var(--second_color)), url("./img/banner_3.jpg");
+    background-image: radial-gradient(var(--first_color), var(--second_color)), url("../img/banner_3.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-blend-mode: darken;

@@ -15,7 +15,7 @@ $(document).ready(function(){
         "background": "white",
         "box-shadow":"5px 1px 5px black"
         }); 
-        $(".logo").attr("src", "./src/img/black_logo.png");
+        $(".logo").attr("src", "../public/img/black_logo.png");
 
     }
 
@@ -23,7 +23,7 @@ $(document).ready(function(){
         $("#nav-bar").css("background" , "transparent"); 
         $("#nav-bar").css("box-shadow","initial"); 	
         $(".nav-link").css("color" , "white");
-        $(".logo").attr("src", "./src/img/white_logo.png");
+        $(".logo").attr("src", "../public/img/white_logo.png");
     }
     
     $(window).scroll(function(){
@@ -34,7 +34,7 @@ $(document).ready(function(){
             "background": "white",
             "box-shadow":"5px 1px 5px black"
             }); 
-            $(".logo").attr("src", "./src/img/black_logo.png");
+            $(".logo").attr("src", "../public/img/black_logo.png");
 
         }
   
@@ -42,7 +42,7 @@ $(document).ready(function(){
             $("#nav-bar").css("background" , "transparent"); 
             $("#nav-bar").css("box-shadow","initial"); 	
             $(".nav-link").css("color" , "white");
-            $(".logo").attr("src", "./src/img/white_logo.png");
+            $(".logo").attr("src", "../public/img/white_logo.png");
         }
     })
 
