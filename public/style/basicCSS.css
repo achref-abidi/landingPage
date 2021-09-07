@@ -1,9 +1,9 @@
 :root{
-    --first_color: #4922b4;
+    /*--first_color: #4922b4;*/
+    --first_color:#23527C;
     --second_color:#c04327;
     --third_color: rgb(193, 213, 252);
-    --section_header_max_width: 700px; /* Defining the max width of sub-section-1
-                            for more responsive design */
+    --section_header_max_width: 700px; /* Defining the max width of sub-section-1 for more responsive design */
 }
 
 *{
@@ -17,10 +17,6 @@
 @keyframes fade{
     from{opacity: 0.2}
     to{opacity: 1}
-}
-
-body{
-    background-color: white;
 }
 
 input, textarea{
@@ -51,7 +47,7 @@ hr.space{
 }
 
 .hoverbal-icon:hover{
-    color:var(--second_color);
+    color:white;
     background-color:var(--first_color);
     cursor: pointer;
     transform: translate(0px, -5px);
@@ -83,7 +79,7 @@ footer > div{
     justify-content: space-between;
 }
 
-footer >div >a{
+footer .credits, footer .to-top{
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2.1px;
@@ -91,9 +87,9 @@ footer >div >a{
     color : white;
 }
 
-footer >div >a:hover{
-
+footer .credits:hover{
     text-decoration :underline solid white 2px;
+    color: white;
 }
 
 footer >div >p{
@@ -101,6 +97,47 @@ footer >div >p{
     text-transform: capitalize;
     letter-spacing: 1.1px;
     
+}
+
+.message{
+    border-radius: 5px;
+    padding: 10px;
+    color : white;
+    text-align: center;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
 
 

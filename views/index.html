@@ -11,7 +11,6 @@
 
 	<link rel="stylesheet" type="text/css" href="/public/style/basicCSS.css">
 	<link rel="stylesheet" type="text/css" href="/public/style/icons.css">
-	<link rel="stylesheet" type="text/css" href="/public/style/navBar.css">
 	<link rel="stylesheet" type="text/css" href="/public/style/header.css">
 	<link rel="stylesheet" type="text/css" href="/public/style/work.css">
 	<link rel="stylesheet" type="text/css" href="/public/style/services.css">
@@ -22,54 +21,54 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+	<!-- Adding emailJs-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script src="/public/script/contact.js"></script>
 	<script src="/public/script/effects.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
-<body>
-	<!-- Creating Nav Bar-->
-	<section id="nav-bar">
-		<!-- Fist column which will contain the logo-->
-		<div class="col-1">
-			<img src="/public/img/white_logo.png" class="logo">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--NAVBAR using BOOTSTRAP-->
+	<nav class="navbar navbar-default navbar-fixed-top"">
+	<div class=" container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!--<img src="/public/img/white_logo.png" class="logo">-->
+			<a class="navbar-brand" href="#header">Company</a>
 		</div>
-		<!-- End first column-->
+		<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#header">Home</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#clients">Clients</a></li>
+				<li><a href="#team">Our Team</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		</div>
+	</nav>
 
-		<!-- second column which will contain the navigation links-->
-		<div class="col-2">
-			<div class="dropbtn">
-				<i class="icon-menu"></i>
-			</div>
-			<div class="col-2-1">
-				<a href="#header" class="nav-link">home</a>
-			</div>
-			<div class="col-2-2">
-				<a href="#works" class="nav-link">works</a>
-			</div>
-			<div class="col-2-3">
-				<a href="#services" class="nav-link">services</a>
-			</div>
-			<div class="col-2-4">
-				<a href="#clients" class="nav-link">clients</a>
-			</div>
-			<div class="col-2-5">
-				<a href="#team" class="nav-link">our team</a>
-			</div>
-			<div class="col-2-6">
-				<a href="#contact" class="nav-link">contact</a>
-			</div>
-		</div>
-		<!-- End second column-->
-	</section>
-	<!-- End Nav Bar-->
 
 	<!-- Creating Header -->
 	<section class="" id="header">
 		<!-- First row -->
 		<div class="col-2">
 			<h1 class="animate-fadein">creatified business <span class="word">template</span></h1>
-			<p id="slogan" class="animate-fadein"><em>we beleive in creativity always</em></p>
+			<p id="slogan" class="animate-fadein"><em>we believe in creativity always</em></p>
 			<ul class="icon-list animate-fadein">
 				<li><i class="icon-appleinc rouded-icon "></i></li>
 				<li><i class="icon-android rouded-icon "></i></li>
@@ -104,7 +103,7 @@
 		<!-- End Sub-Section-->
 
 		<!-- content section-->
-		<section class="sub-section-2">
+		<section class="sub-section-2 slideanim">
 			<!-- start icon box -->
 			<div class="icon-box shadow">
 				<span class="large-icon icon-measure"></span>
@@ -205,13 +204,19 @@
 		<!-- End Sub-Section-->
 
 		<!-- content section-->
-		<section class="sub-section-2">
-			<div class="slide-show">
-
+		<div id="myCarousel" class="carousel slide sub-section-2" data-ride="carousel">
+			<!--class="sub-section-2"-->
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<!--slide-show-->
 				<!-- A single slide that contain the infos-->
-				<div class="slides fade">
-					<!--<span class="slide-index hidden-slide">1/3</span>-->
-					<img src="../public/img/profil-01.jpg" class="person-picture">
+				<div class="item active">
+					<!--<img src="../public/img/profil-01.jpg" class="person-picture">-->
 					<p class="name">tony stark</p>
 					<p class="title">sr engineer</p>
 					<p class="comment">
@@ -224,9 +229,8 @@
 				</div>
 
 				<!-- A single slide that contain the infos-->
-				<div class="slides hidden-slide fade">
-					<!--<span class="slide-index">2/3</span>-->
-					<img src="../public/img/profil-02.jpg" class="person-picture">
+				<div class="item">
+					<!--<img src="../public/img/profil-02.jpg" class="person-picture">-->
 					<p class="name">nicola tesla</p>
 					<p class="title">designer</p>
 					<p class="comment">
@@ -238,9 +242,8 @@
 				</div>
 
 				<!-- A single slide that contain the infos-->
-				<div class="slides hidden-slide fade">
-					<!--<span class="slide-index">3/3</span>-->
-					<img src="../public/img/profil-03.jpg" class="person-picture">
+				<div class="item">
+					<!--<img src="../public/img/profil-03.jpg" class="person-picture">-->
 					<p class="name">elon musk</p>
 					<p class="title">developer</p>
 					<p class="comment">
@@ -251,15 +254,18 @@
 					</p>
 				</div>
 
-				<!-- The dots/Circles-->
-				<div class="navigation-2">
-					<span class="dot icon-dot-single selected" onclick="slideShow(1)"></span>
-					<span class="dot icon-dot-single" onclick="slideShow(2)"></span>
-					<span class="dot icon-dot-single" onclick="slideShow(3)"></span>
-				</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
 
 			</div>
-		</section>
+		</div>
 		<!-- End sub-Section-->
 	</section>
 	<!-- End main-Section-->
@@ -365,9 +371,8 @@
 	</section>
 	<!-- End main-Section-->
 
-	<!-- Contact Section-->
+	<!-- ContactBanner Section-->
 	<section class="main-section covered" id="download-banner">
-		<!-- title and short description section-->
 		<section class="sub-section-1">
 			<div class="col-2">
 				<h2>download</h2>
@@ -378,9 +383,6 @@
 				<hr class="divider">
 			</div>
 		</section>
-		<!-- End Sub-Section-->
-
-		<!-- content section-->
 		<section class="sub-section-2">
 			<div class="col-2">
 				<a href="#" class="icon-button button"><i class="icon-appleinc"></i>app store</a>
@@ -388,9 +390,7 @@
 				<a href="#" class="icon-button button"><i class="icon-windows8"></i>windows</a>
 			</div>
 		</section>
-		<!-- End sub-Section-->
 	</section>
-	<!-- End main-Section-->
 
 	<!-- Contact Section-->
 	<section class="main-section" id="contact">
@@ -411,7 +411,7 @@
 		<section class="sub-section-2">
 			<div class="col-1">
 				<h3>drop a message</h3>
-				<form action="" method="">
+				<form id="contact-form">
 					<input type="text" name="name" id="name" placeholder="Your name" required />
 					<hr class="space">
 					<input type="tel" name="phone" id="phone" placeholder="Your phone number" required />
@@ -420,6 +420,7 @@
 					<hr class="space">
 					<textarea id="email-body" name="email-body" rows="4" col="50" required></textarea>
 					<hr class="space">
+					<p id="message"></p>
 					<input type="submit" class="submit-button" value="Send" />
 				</form>
 			</div>
@@ -463,14 +464,13 @@
 
 	<footer>
 		<div>
-			<a href="#">achref abidi</a>
+			<a href="#" class="credits">achref abidi</a>
+			<a href="#header" title="To Top" class="to-top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			  </a>
 			<p>All Rights Reserved</p>
 		</div>
 	</footer>
-
-
-
-
 </body>
 
 </html>

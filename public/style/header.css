@@ -1,11 +1,11 @@
 #header {
     height: 100vh;
-    background-color: grey;
-    background-image: radial-gradient( #4922b4, #c04327),url('../img/hero_background_3.jpg');
+    background-color: var(--first_color);
+    /*background-image: radial-gradient( #4922b4, #c04327),url('../img/hero_background_3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: overlay;
+    background-blend-mode: overlay;*/
     
     text-align: center;
     display: flex;

@@ -3,24 +3,4 @@
     #services > .sub-section-2 > .col-1 {
         display: none;
     }
-
-    #nav-bar{
-        flex-direction: row-reverse;
-    }
-    #nav-bar > .col-2 > .dropbtn {
-        display: inline;
-    }
-    #nav-bar > .col-2{
-        background-color: rgba(0, 0, 0, 0.5);
-        margin-top: 300px;
-        
-        flex-direction: column;
-        
-    }
-
-    #nav-bar > .col-2 >  div{
-        display: none;
-    }
-
-
   }

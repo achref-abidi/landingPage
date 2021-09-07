@@ -22,7 +22,7 @@
     max-width: var(--section_header_max_width);
 }
 
-.main-section > .sub-section-1 > .col-2> h2{
+ h2{
     font-weight: bold;
     font-size: 28px;
     letter-spacing: 2.6px;
@@ -33,10 +33,14 @@
     padding: 10px;
 }
 
-.main-section > .sub-section-1 > .col-2> hr.divider{
+hr.divider{
     width: 50%;
     border-top: solid var(--third_color) 2px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
     border-radius: 5px;
+    margin: 20px 0;
 }
 
 .main-section > .sub-section-1 > .col-2> .description{
@@ -118,7 +122,3 @@
     position: relative;
     top: -55px; 
 }
-
-
-
-
