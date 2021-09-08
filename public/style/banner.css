@@ -37,22 +37,22 @@
     align-items: center;
 }
 
-#download-banner > .sub-section-2 > .col-2 > .icon-button{
+.icon-button{
+    background-color: transparent;
     text-align: center;
     font-size : 20px;
-    text-transform: lowercase;
-    letter-spacing: 1.0px;
-    line-height: 18px;  
-    transition-duration: 1s;
+    border: solid white 2px !important;
+    border-radius: 5px !important;
+    color: white;
+    text-transform: capitalize;
 }
 
-#download-banner > .sub-section-2 > .col-2 > .icon-button > i{
+.icon-button > i{
     color: white;   
     margin: 10px;
     vertical-align: middle;
 }
 
-#download-banner > .sub-section-2 > .col-2 > .icon-button:hover{
-    background-color: var(--first_color);
-    border-color: var(--first_color);
+.icon-button:hover{
+    color:white !important;
 }

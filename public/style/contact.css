@@ -78,19 +78,19 @@
 
 .submit-button{
     /* General */
-    color: white;
+   /* color: white;
     border-radius: 5px;
     border: none;
     font-weight: bold;
     letter-spacing: 1.1px;
     cursor: pointer;
-    width: 200px;
+    width: 200px;*/
     /* Advanced */
-    padding: 10px 20px 10px 20px;
+    /*padding: 10px 20px 10px 20px;
     margin: 10px 10px 10px 10px;
-    background-color: var(--first_color);
+    background-color: var(--first_color);*/
     float: right;
-    transition-duration: 1s;
+    /*transition-duration: 1s;*/
 }
 
 .submit-button:hover{

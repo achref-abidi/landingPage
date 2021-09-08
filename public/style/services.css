@@ -13,5 +13,11 @@
     position: relative;
     top: 20%;
 }
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    #services > .sub-section-2 > .col-1 {
+        display: none;
+    }
+  }
 
 
